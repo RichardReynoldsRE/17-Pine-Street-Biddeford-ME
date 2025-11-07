@@ -1,0 +1,1534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>17 Pine Street, Biddeford ME - Premium Investment Opportunity</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-color: #283592;
+            --accent-color: #0891B2;
+            --text-dark: #1a1a1a;
+            --text-gray: #666666;
+            --bg-light: #f8f9fa;
+            --border-color: #e0e0e0;
+            --success-color: #10b981;
+            --gold: #d4af37;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            color: var(--text-dark);
+            line-height: 1.6;
+            background-color: #ffffff;
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, var(--primary-color) 0%, #1a237e 100%);
+            color: white;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .header-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header-logo {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .header-logo img {
+            height: 50px;
+            width: auto;
+        }
+
+        .agent-info h2 {
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+
+        .agent-info p {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        .contact-btn {
+            background-color: var(--accent-color);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 6px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 1rem;
+        }
+
+        .contact-btn:hover {
+            background-color: #0e7490;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(8, 145, 178, 0.3);
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            height: 80vh;
+            min-height: 600px;
+            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), 
+                        url('files/images/Full-Building-Outside-3D-Concept-Front.png');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+
+        .hero-content {
+            max-width: 900px;
+            padding: 0 2rem;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+            letter-spacing: -1px;
+        }
+
+        .hero .subtitle {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            font-weight: 300;
+        }
+
+        .hero .price {
+            font-size: 3rem;
+            font-weight: 800;
+            color: var(--gold);
+            margin-bottom: 2rem;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+        }
+
+        .hero-badges {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+
+        .badge {
+            background-color: rgba(255,255,255,0.2);
+            backdrop-filter: blur(10px);
+            padding: 0.75rem 1.5rem;
+            border-radius: 50px;
+            font-weight: 600;
+            border: 2px solid rgba(255,255,255,0.3);
+            font-size: 1rem;
+        }
+
+        .hero-cta {
+            margin-top: 2rem;
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .hero-btn {
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .hero-btn.primary {
+            background-color: var(--accent-color);
+            color: white;
+        }
+
+        .hero-btn.secondary {
+            background-color: white;
+            color: var(--primary-color);
+        }
+
+        .hero-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+        }
+
+        /* Container */
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .section {
+            padding: 5rem 0;
+        }
+
+        .section-title {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+            text-align: center;
+        }
+
+        .section-subtitle {
+            font-size: 1.3rem;
+            color: var(--text-gray);
+            margin-bottom: 3rem;
+            text-align: center;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Investment Alert */
+        .investment-alert {
+            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+            border-left: 6px solid #f59e0b;
+            padding: 2.5rem;
+            border-radius: 12px;
+            margin: 3rem 0;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+
+        .investment-alert h3 {
+            color: #92400e;
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .investment-alert p {
+            color: #78350f;
+            font-size: 1.2rem;
+            line-height: 1.8;
+        }
+
+        /* Stats Grid */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .stat-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            border: 1px solid var(--border-color);
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 35px rgba(0,0,0,0.15);
+        }
+
+        .stat-label {
+            font-size: 0.95rem;
+            color: var(--text-gray);
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+        }
+
+        .stat-value {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--primary-color);
+        }
+
+        .stat-value.highlight {
+            color: var(--accent-color);
+        }
+
+        .stat-value.success {
+            color: var(--success-color);
+        }
+
+        /* Design Vision Section */
+        .design-vision {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+        }
+
+        .vision-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .vision-card {
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+        }
+
+        .vision-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+        }
+
+        .vision-card img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .vision-card-content {
+            padding: 2rem;
+        }
+
+        .vision-card h3 {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .vision-card p {
+            color: var(--text-gray);
+            line-height: 1.8;
+        }
+
+        /* Comparison Section */
+        .comparison-section {
+            background-color: white;
+        }
+
+        .comparison-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .comparison-card {
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            border: 2px solid var(--border-color);
+        }
+
+        .comparison-header {
+            padding: 2.5rem;
+            text-align: center;
+        }
+
+        .comparison-header.current {
+            background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);
+        }
+
+        .comparison-header.potential {
+            background: linear-gradient(135deg, #dcfce7 0%, #bbf7d0 100%);
+        }
+
+        .comparison-header h3 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .comparison-header .price {
+            font-size: 3rem;
+            font-weight: 800;
+        }
+
+        .comparison-body {
+            padding: 2rem;
+        }
+
+        .comparison-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .comparison-row:last-child {
+            border-bottom: none;
+        }
+
+        .comparison-label {
+            color: var(--text-gray);
+            font-weight: 500;
+        }
+
+        .comparison-value {
+            font-weight: 700;
+            color: var(--text-dark);
+        }
+
+        /* Property Details */
+        .property-details-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .detail-box {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 16px;
+            border: 2px solid var(--border-color);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+        }
+
+        .detail-box h3 {
+            color: var(--primary-color);
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 1rem;
+            border-bottom: 3px solid var(--accent-color);
+            font-weight: 700;
+        }
+
+        .detail-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.75rem 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .detail-item:last-child {
+            border-bottom: none;
+        }
+
+        .detail-label {
+            color: var(--text-gray);
+            font-weight: 500;
+        }
+
+        .detail-value {
+            font-weight: 600;
+            color: var(--text-dark);
+        }
+
+        /* Gallery Section */
+        .gallery-section {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+        }
+
+        .gallery-category {
+            margin-bottom: 4rem;
+        }
+
+        .gallery-category h3 {
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+            border-left: 6px solid var(--accent-color);
+            padding-left: 1rem;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 12px;
+            aspect-ratio: 4/3;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .gallery-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.85), transparent);
+            color: white;
+            padding: 1.5rem 1rem 1rem 1rem;
+            font-size: 0.95rem;
+            font-weight: 600;
+        }
+
+        /* Agent Profile Section */
+        .agent-profile {
+            background: white;
+        }
+
+        .agent-content {
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            gap: 3rem;
+            align-items: start;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .agent-photo {
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+        }
+
+        .agent-photo img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .agent-bio h3 {
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .agent-bio h4 {
+            font-size: 1.3rem;
+            color: var(--accent-color);
+            margin-bottom: 1.5rem;
+            font-weight: 600;
+        }
+
+        .agent-bio p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: var(--text-gray);
+            margin-bottom: 1.5rem;
+        }
+
+        .agent-contact {
+            display: flex;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, var(--primary-color) 0%, #1a237e 100%);
+            color: white;
+            padding: 6rem 0;
+            text-align: center;
+        }
+
+        .cta-section h2 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            font-weight: 800;
+        }
+
+        .cta-section p {
+            font-size: 1.4rem;
+            margin-bottom: 2.5rem;
+            opacity: 0.95;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .cta-button {
+            background-color: var(--accent-color);
+            color: white;
+            padding: 1.25rem 3rem;
+            border: none;
+            border-radius: 10px;
+            font-weight: 700;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .cta-button:hover {
+            background-color: #0e7490;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 25px rgba(8, 145, 178, 0.4);
+        }
+
+        .cta-button.secondary {
+            background-color: white;
+            color: var(--primary-color);
+        }
+
+        .cta-button.secondary:hover {
+            background-color: #f8f9fa;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #1a1a1a;
+            color: white;
+            padding: 4rem 0 2rem 0;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-section h4 {
+            margin-bottom: 1.5rem;
+            color: var(--accent-color);
+            font-size: 1.3rem;
+            font-weight: 700;
+        }
+
+        .footer-section p {
+            margin-bottom: 0.5rem;
+            color: #ccc;
+        }
+
+        .footer-section a {
+            color: #ccc;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 0.5rem;
+            transition: color 0.3s ease;
+        }
+
+        .footer-section a:hover {
+            color: white;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid #333;
+            color: #999;
+        }
+
+        .footer-logo {
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-logo img {
+            height: 80px;
+            width: auto;
+        }
+
+        /* Lightbox */
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.95);
+            z-index: 9999;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .lightbox.active {
+            display: flex;
+        }
+
+        .lightbox img {
+            max-width: 90%;
+            max-height: 90%;
+            object-fit: contain;
+        }
+
+        .lightbox-close {
+            position: absolute;
+            top: 2rem;
+            right: 3rem;
+            color: white;
+            font-size: 3rem;
+            cursor: pointer;
+            z-index: 10000;
+            font-weight: 300;
+        }
+
+        .lightbox-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(255,255,255,0.2);
+            color: white;
+            padding: 1rem 1.5rem;
+            font-size: 2rem;
+            cursor: pointer;
+            border: none;
+            backdrop-filter: blur(5px);
+            transition: all 0.3s ease;
+        }
+
+        .lightbox-nav:hover {
+            background-color: rgba(255,255,255,0.3);
+        }
+
+        .lightbox-prev {
+            left: 2rem;
+        }
+
+        .lightbox-next {
+            right: 2rem;
+        }
+
+        .lightbox-caption {
+            position: absolute;
+            bottom: 2rem;
+            left: 50%;
+            transform: translateX(-50%);
+            color: white;
+            font-size: 1.2rem;
+            font-weight: 600;
+            background-color: rgba(0,0,0,0.7);
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            backdrop-filter: blur(10px);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero .subtitle {
+                font-size: 1.2rem;
+            }
+
+            .hero .price {
+                font-size: 2rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .header-content {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .stat-value {
+                font-size: 2rem;
+            }
+
+            .comparison-grid,
+            .vision-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .agent-content {
+                grid-template-columns: 1fr;
+            }
+
+            .lightbox-nav {
+                padding: 0.75rem 1rem;
+                font-size: 1.5rem;
+            }
+
+            .lightbox-prev {
+                left: 1rem;
+            }
+
+            .lightbox-next {
+                right: 1rem;
+            }
+        }
+
+        /* Scroll to top button */
+        .scroll-top {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background-color: var(--accent-color);
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(8, 145, 178, 0.3);
+            transition: all 0.3s ease;
+            z-index: 999;
+        }
+
+        .scroll-top:hover {
+            background-color: #0e7490;
+            transform: translateY(-5px);
+        }
+
+        .scroll-top.visible {
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="header-logo">
+                <img src="files/images/Home-Sweet-Maine-Logo.png" alt="Home Sweet Maine">
+                <div class="agent-info">
+                    <h2>Richard Reynolds</h2>
+                    <p>Home Sweet Maine | Keller Williams Realty</p>
+                </div>
+            </div>
+            <a href="tel:207-560-4883" class="contact-btn">📞 207-560-4883</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <div class="hero-content">
+            <h1>17 Pine Street</h1>
+            <p class="subtitle">Biddeford, Maine</p>
+            <p class="price">$275,000</p>
+            <div class="hero-badges">
+                <span class="badge">2 Units</span>
+                <span class="badge">Down to Studs</span>
+                <span class="badge">Prime Location</span>
+                <span class="badge">8.18% ARV Cap Rate</span>
+            </div>
+            <div class="hero-cta">
+                <a href="#contact" class="hero-btn primary">Schedule Showing</a>
+                <a href="#investment" class="hero-btn secondary">View Investment Details</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Investment Alert -->
+    <section class="section">
+        <div class="container">
+            <div class="investment-alert">
+                <h3>🔨 Premium Value-Add Investment Opportunity</h3>
+                <p>This property is gutted down to the studs and ready for your vision. With a <strong>$275,000 potential value gain</strong> to ARV ($550k), this is perfect for investors looking to maximize returns through strategic renovation. Create exactly what the Biddeford rental market demands while building substantial equity.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Investment Highlights -->
+    <section class="section" id="investment">
+        <div class="container">
+            <h2 class="section-title">Investment Highlights</h2>
+            <p class="section-subtitle">Strong fundamentals with exceptional upside potential</p>
+            
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-label">List Price</div>
+                    <div class="stat-value highlight">$275,000</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">After Repair Value</div>
+                    <div class="stat-value success">$550,000</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Price Per Unit</div>
+                    <div class="stat-value">$137,500</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Total Square Footage</div>
+                    <div class="stat-value">1,520 SF</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Current Cap Rate</div>
+                    <div class="stat-value">7.96%</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">ARV Cap Rate</div>
+                    <div class="stat-value success">8.18%</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Design Vision -->
+    <section class="section design-vision">
+        <div class="container">
+            <h2 class="section-title">Design Vision & 3D Concepts</h2>
+            <p class="section-subtitle">Professional architectural concepts showing the full potential of this property</p>
+            
+            <div class="vision-grid">
+                <div class="vision-card">
+                    <img src="files/images/Design-Concept.png" alt="Design Concept">
+                    <div class="vision-card-content">
+                        <h3>Overall Design Concept</h3>
+                        <p>Modern, efficient layout maximizing livable space and natural light throughout both units.</p>
+                    </div>
+                </div>
+                <div class="vision-card">
+                    <img src="files/images/Unit-Break-Down-3D-Concept.png" alt="Unit Breakdown">
+                    <div class="vision-card-content">
+                        <h3>Unit Configuration</h3>
+                        <p>Strategic layout separating Unit 1 (1bd/1ba) and Unit 2 (2bd/2ba) with optimal privacy and rental income potential.</p>
+                    </div>
+                </div>
+                <div class="vision-card">
+                    <img src="files/images/First-Floor-3D-Concept.png" alt="First Floor 3D">
+                    <div class="vision-card-content">
+                        <h3>First Floor Design</h3>
+                        <p>Open-concept living with modern kitchen, dining area, and smart use of space.</p>
+                    </div>
+                </div>
+                <div class="vision-card">
+                    <img src="files/images/Second-Floor-3D-Concept.png" alt="Second Floor 3D">
+                    <div class="vision-card-content">
+                        <h3>Second Floor Layout</h3>
+                        <p>Two bedrooms with two full bathrooms providing comfortable, private living spaces.</p>
+                    </div>
+                </div>
+                <div class="vision-card">
+                    <img src="files/images/Full-Building-Outside-3D-Concept-Front.png" alt="Building Front 3D">
+                    <div class="vision-card-content">
+                        <h3>Exterior - Front View</h3>
+                        <p>Classic New England charm with modern updates and excellent curb appeal.</p>
+                    </div>
+                </div>
+                <div class="vision-card">
+                    <img src="files/images/Full-Building-Outside-3D-Concept-Back.png" alt="Building Back 3D">
+                    <div class="vision-card-content">
+                        <h3>Exterior - Back View</h3>
+                        <p>Deck potential overlooking the Saco River - a major value-add opportunity.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- As-Is vs ARV Comparison -->
+    <section class="section comparison-section">
+        <div class="container">
+            <h2 class="section-title">Current State vs. After Repair Value</h2>
+            <p class="section-subtitle">Compare the as-is opportunity to fully renovated potential</p>
+            
+            <div class="comparison-grid">
+                <div class="comparison-card">
+                    <div class="comparison-header current">
+                        <h3>Current State (As-Is)</h3>
+                        <div class="price" style="color: var(--text-dark);">$275,000</div>
+                    </div>
+                    <div class="comparison-body">
+                        <div class="comparison-row">
+                            <span class="comparison-label">Price per Unit</span>
+                            <span class="comparison-value">$137,500</span>
+                        </div>
+                        <div class="comparison-row">
+                            <span class="comparison-label">Price per SF</span>
+                            <span class="comparison-value">$181</span>
+                        </div>
+                        <div class="comparison-row">
+                            <span class="comparison-label">Gross Annual Income</span>
+                            <span class="comparison-value">$30,000</span>
+                        </div>
+                        <div class="comparison-row">
+                            <span class="comparison-label">Annual Expenses</span>
+                            <span class="comparison-value">$8,100</span>
+                        </div>
+                        <div class="comparison-row">
+                            <span class="comparison-label">Net Operating Income</span>
+                            <span class="comparison-value">$21,900</span>
+                        </div>
+                        <div class="comparison-row">
+                            <span class="comparison-label">Cap Rate</span>
+                            <span class="comparison-value">7.96%</span>
+                        </div>
+                        <div class="comparison-row">
+                            <span class="comparison-label">House Hack Income</span>
+                            <span class="comparison-value">$20,250</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="comparison-card">
+                    <div class="comparison-header potential">
+                        <h3>After Repair Value</h3>
+                        <div class="price" style="color: var(--success-color);">$550,000</div>
+                    </div>
+                    <div class="comparison-body">
+                        <div class="comparison-row">
+                            <span class="comparison-label">Price per Unit</span>
+                            <span class="comparison-value">$257,500</span>
+                        </div>
+                        <div class="comparison-row">
+                            <span class="comparison-label">Price per SF</span>
+                            <span class="comparison-value">$362</span>
+                        </div>
+                        <div class="comparison-row">
+                            <span class="comparison-label">Gross Annual Income</span>
+                            <span class="comparison-value">$45,000</span>
+                        </div>
+                        <div class="comparison-row">
+                            <span class="comparison-label">Annual Expenses</span>
+                            <span class="comparison-value">$11,000</span>
+                        </div>
+                        <div class="comparison-row">
+                            <span class="comparison-label">Net Operating Income</span>
+                            <span class="comparison-value">$34,000</span>
+                        </div>
+                        <div class="comparison-row">
+                            <span class="comparison-label">Cap Rate</span>
+                            <span class="comparison-value">8.18%</span>
+                        </div>
+                        <div class="comparison-row">
+                            <span class="comparison-label">House Hack Income</span>
+                            <span class="comparison-value">$31,000</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Property Details -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Property Details</h2>
+            <p class="section-subtitle">Comprehensive information about this investment opportunity</p>
+            
+            <div class="property-details-grid">
+                <div class="detail-box">
+                    <h3>Building Information</h3>
+                    <div class="detail-item">
+                        <span class="detail-label">Year Built</span>
+                        <span class="detail-value">1900</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Building Size</span>
+                        <span class="detail-value">1,520 SF</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Lot Size</span>
+                        <span class="detail-value">0.12 Acres</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Zoning</span>
+                        <span class="detail-value">R2, No Overlay</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Number of Units</span>
+                        <span class="detail-value">2 Units</span>
+                    </div>
+                </div>
+
+                <div class="detail-box">
+                    <h3>Unit Configuration</h3>
+                    <div class="detail-item">
+                        <span class="detail-label">Unit 1</span>
+                        <span class="detail-value">1 Bed, 1 Bath</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Unit 2</span>
+                        <span class="detail-value">2 Bed, 2 Bath</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Condition</span>
+                        <span class="detail-value">Down to Studs</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Renovation Status</span>
+                        <span class="detail-value">Ready for Build-Out</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Special Features</span>
+                        <span class="detail-value">Saco River Views</span>
+                    </div>
+                </div>
+
+                <div class="detail-box">
+                    <h3>Location Benefits</h3>
+                    <div class="detail-item">
+                        <span class="detail-label">City</span>
+                        <span class="detail-value">Biddeford</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">County</span>
+                        <span class="detail-value">York County</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">State</span>
+                        <span class="detail-value">Maine</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Downtown</span>
+                        <span class="detail-value">Walking Distance</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Saco River</span>
+                        <span class="detail-value">Prime Views</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparable Properties -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Comparable Properties</h2>
+            <p class="section-subtitle">Recent sales in Biddeford demonstrate strong market fundamentals</p>
+            
+            <div class="comparison-grid">
+                <div class="comparison-card">
+                    <img src="files/images/34-Maple-Street-Biddeford-ME-04005.png" alt="34 Maple Street" style="width: 100%; height: 250px; object-fit: cover;">
+                    <div class="comparison-header" style="background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);">
+                        <h3 style="color: var(--text-dark); font-size: 1.5rem;">34 Maple Street</h3>
+                        <div class="price" style="color: var(--primary-color); font-size: 2rem;">$455,000</div>
+                        <p style="color: var(--text-gray); margin-top: 0.5rem;">Days on Market: 7</p>
+                    </div>
+                    <div class="comparison-body">
+                        <div class="comparison-row">
+                            <span class="comparison-label">Number of Units</span>
+                            <span class="comparison-value">2</span>
+                        </div>
+                        <div class="comparison-row">
+                            <span class="comparison-label">Year Built</span>
+                            <span class="comparison-value">1862</span>
+                        </div>
+                        <div class="comparison-row">
+                            <span class="comparison-label">Building Size</span>
+                            <span class="comparison-value">1,844 SF</span>
+                        </div>
+                        <div class="comparison-row">
+                            <span class="comparison-label">Price per SF</span>
+                            <span class="comparison-value">$247</span>
+                        </div>
+                        <div class="comparison-row">
+                            <span class="comparison-label">Units</span>
+                            <span class="comparison-value">3bd/1ba + 2bd/1ba</span>
+                        </div>
+                        <div class="comparison-row">
+                            <span class="comparison-label">Cap Rate</span>
+                            <span class="comparison-value">6.50%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="comparison-card">
+                    <img src="files/images/34-Piersons-Lane-Biddeford-ME-04005.png" alt="34 Piersons Lane" style="width: 100%; height: 250px; object-fit: cover;">
+                    <div class="comparison-header" style="background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);">
+                        <h3 style="color: var(--text-dark); font-size: 1.5rem;">34 Piersons Lane</h3>
+                        <div class="price" style="color: var(--primary-color); font-size: 2rem;">$515,000</div>
+                        <p style="color: var(--text-gray); margin-top: 0.5rem;">Days on Market: 8</p>
+                    </div>
+                    <div class="comparison-body">
+                        <div class="comparison-row">
+                            <span class="comparison-label">Number of Units</span>
+                            <span class="comparison-value">2</span>
+                        </div>
+                        <div class="comparison-row">
+                            <span class="comparison-label">Year Built</span>
+                            <span class="comparison-value">1860</span>
+                        </div>
+                        <div class="comparison-row">
+                            <span class="comparison-label">Building Size</span>
+                            <span class="comparison-value">2,401 SF</span>
+                        </div>
+                        <div class="comparison-row">
+                            <span class="comparison-label">Price per SF</span>
+                            <span class="comparison-value">$214</span>
+                        </div>
+                        <div class="comparison-row">
+                            <span class="comparison-label">Units</span>
+                            <span class="comparison-value">3bd/2ba + 1bd/1ba</span>
+                        </div>
+                        <div class="comparison-row">
+                            <span class="comparison-label">Cap Rate</span>
+                            <span class="comparison-value">6.85%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="comparison-card">
+                    <img src="files/images/35-Foss-Street-Biddeford-ME-04005.png" alt="35 Foss Street" style="width: 100%; height: 250px; object-fit: cover;">
+                    <div class="comparison-header" style="background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);">
+                        <h3 style="color: var(--text-dark); font-size: 1.5rem;">35 Foss Street</h3>
+                        <div class="price" style="color: var(--primary-color); font-size: 2rem;">$510,000</div>
+                        <p style="color: var(--text-gray); margin-top: 0.5rem;">Days on Market: 31</p>
+                    </div>
+                    <div class="comparison-body">
+                        <div class="comparison-row">
+                            <span class="comparison-label">Number of Units</span>
+                            <span class="comparison-value">2</span>
+                        </div>
+                        <div class="comparison-row">
+                            <span class="comparison-label">Year Built</span>
+                            <span class="comparison-value">1890</span>
+                        </div>
+                        <div class="comparison-row">
+                            <span class="comparison-label">Building Size</span>
+                            <span class="comparison-value">2,028 SF</span>
+                        </div>
+                        <div class="comparison-row">
+                            <span class="comparison-label">Price per SF</span>
+                            <span class="comparison-value">$251</span>
+                        </div>
+                        <div class="comparison-row">
+                            <span class="comparison-label">Units</span>
+                            <span class="comparison-value">3bd/2ba + 2bd/1ba</span>
+                        </div>
+                        <div class="comparison-row">
+                            <span class="comparison-label">Cap Rate</span>
+                            <span class="comparison-value">3.33%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="investment-alert" style="margin-top: 3rem; background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%); border-left-color: var(--primary-color);">
+                <h3 style="color: #1e40af;">💡 Why 17 Pine Street is the Better Investment</h3>
+                <p style="color: #1e3a8a;">At $275,000 with an <strong>8.18% ARV cap rate</strong>, this property significantly outperforms recent comparables (averaging 5.5% cap rate). Plus, you control the renovation to maximize value - these sold properties already have their finishes locked in at lower returns.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Gallery -->
+    <section class="section gallery-section">
+        <div class="container">
+            <h2 class="section-title">Complete Property Gallery</h2>
+            <p class="section-subtitle">Comprehensive visual documentation of the property and location</p>
+            
+            <!-- Building Exterior -->
+            <div class="gallery-category">
+                <h3>Building Exterior</h3>
+                <div class="gallery-grid" id="gallery-exterior"></div>
+            </div>
+
+            <!-- Aerial & Property Views -->
+            <div class="gallery-category">
+                <h3>Aerial & Property Views</h3>
+                <div class="gallery-grid" id="gallery-aerial"></div>
+            </div>
+
+            <!-- Unit 1 Interior -->
+            <div class="gallery-category">
+                <h3>Unit 1 - Interior (1 Bed, 1 Bath)</h3>
+                <div class="gallery-grid" id="gallery-unit1"></div>
+            </div>
+
+            <!-- Unit 2 Interior -->
+            <div class="gallery-category">
+                <h3>Unit 2 - Interior (2 Bed, 2 Bath)</h3>
+                <div class="gallery-grid" id="gallery-unit2"></div>
+            </div>
+
+            <!-- Location & Surroundings -->
+            <div class="gallery-category">
+                <h3>Location & Surroundings</h3>
+                <div class="gallery-grid" id="gallery-location"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Agent Profile -->
+    <section class="section agent-profile" id="agent">
+        <div class="container">
+            <h2 class="section-title">Meet Your Agent</h2>
+            <p class="section-subtitle">Expertise you can trust, results you can count on</p>
+            
+            <div class="agent-content">
+                <div class="agent-photo">
+                    <img src="files/images/Photo-of-Richard-Reynolds.png" alt="Richard Reynolds">
+                </div>
+                <div class="agent-bio">
+                    <h3>Richard Reynolds</h3>
+                    <h4>Buyer & Seller Agent | Home Sweet Maine</h4>
+                    <p>Real estate is about relationships, strategy, and results—kind of like Monopoly, but with fewer family arguments.</p>
+                    <p>In real estate, I believe that success is built on relationships, not just transactions. My approach is centered around supporting my community, fostering genuine connections, and ensuring my clients feel confident and empowered in their decisions. Whether guiding first-time homebuyers with education and patience or delivering results for those who are ready to move quickly, I adapt to meet their needs.</p>
+                    <p>I thrive on problem-solving, strategic thinking, and making the process enjoyable—because buying or selling a home should be both exciting and rewarding. With a passion for numbers, strategy, and a good challenge, I bring both precision and personality to every deal, ensuring my clients get the best possible outcome while having fun along the way.</p>
+                    <div class="agent-contact">
+                        <a href="tel:207-560-4883" class="cta-button">📞 Call Now</a>
+                        <a href="mailto:richard@homesweetmaine.com" class="cta-button secondary">✉️ Email</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="contact">
+        <div class="container">
+            <h2>Ready to Explore This Investment?</h2>
+            <p>Schedule a showing or get detailed financial analysis</p>
+            <div class="cta-buttons">
+                <a href="tel:207-560-4883" class="cta-button">📞 Call: 207-560-4883</a>
+                <a href="mailto:richard@homesweetmaine.com" class="cta-button secondary">✉️ Email Richard</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="files/images/Home-Sweet-Maine-Logo.png" alt="Home Sweet Maine">
+                    </div>
+                    <p><strong>Home Sweet Maine</strong></p>
+                    <p>Keller Williams Realty</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p><strong>Richard Reynolds</strong></p>
+                    <a href="tel:207-560-4883">207-560-4883</a>
+                    <a href="mailto:richard@homesweetmaine.com">richard@homesweetmaine.com</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Property</h4>
+                    <p>17 Pine Street</p>
+                    <p>Biddeford, ME 04005</p>
+                    <p><strong>$275,000</strong></p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <a href="#investment">Investment Details</a>
+                    <a href="#agent">About the Agent</a>
+                    <a href="#contact">Schedule Showing</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Home Sweet Maine | Keller Williams Realty. All rights reserved.</p>
+                <p>This is not an offer to sell or lease real estate. All information provided is deemed reliable but is not guaranteed and should be independently verified.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+        <button class="lightbox-nav lightbox-prev" onclick="changeImage(-1)">&#10094;</button>
+        <img id="lightbox-img" src="" alt="Property Photo">
+        <button class="lightbox-nav lightbox-next" onclick="changeImage(1)">&#10095;</button>
+        <div class="lightbox-caption" id="lightbox-caption"></div>
+    </div>
+
+    <!-- Scroll to Top Button -->
+    <div class="scroll-top" id="scrollTop" onclick="scrollToTop()">
+        ↑
+    </div>
+
+    <script>
+        // Photo data organized by category
+        const photos = {
+            exterior: [
+                { src: 'files/images/Front-View-of-Building.jpg', caption: 'Front View of Building' },
+                { src: 'files/images/Front-of-Building-Street-View.jpg', caption: 'Front of Building Street View' },
+                { src: 'files/images/Back-of-Building.jpg', caption: 'Back of Building' },
+                { src: 'files/images/Back-of-Building-Street-View.jpg', caption: 'Back of Building Street View' },
+                { src: 'files/images/Side-of-Building-Street-View.jpg', caption: 'Side of Building Street View' },
+                { src: 'files/images/Side-of-Building-Street-View-2.jpg', caption: 'Side of Building Street View 2' },
+                { src: 'files/images/Side-of-Building-Neighbor-View.jpg', caption: 'Side of Building Neighbor View' },
+                { src: 'files/images/Side-of-Building-Zoomed-Out-Street-View.jpg', caption: 'Side of Building Zoomed Out Street View' }
+            ],
+            aerial: [
+                { src: 'files/images/Top-View.jpg', caption: 'Top View' },
+                { src: 'files/images/Top-View-Zoomed-Out.jpg', caption: 'Top View Zoomed Out' },
+                { src: 'files/images/Side-of-Building-Ariel.jpg', caption: 'Aerial Side View' },
+                { src: 'files/images/View-of-Property-from-Saco-River.jpg', caption: 'View of Property from Saco River' }
+            ],
+            unit1: [
+                { src: 'files/images/Unit-1-Photo-1.jpg', caption: 'Unit 1 - Main Area' },
+                { src: 'files/images/Unit-1-Photo-3.jpg', caption: 'Unit 1 - Living Space' },
+                { src: 'files/images/Unit-1-Photo-5.jpg', caption: 'Unit 1 - Interior View' },
+                { src: 'files/images/Unit-1-Photo-7.jpg', caption: 'Unit 1 - Room Layout' },
+                { src: 'files/images/Unit-1-Photo-8.jpg', caption: 'Unit 1 - Space Overview' },
+                { src: 'files/images/Unit-1-Photo-9-Loft.jpg', caption: 'Unit 1 - Loft Space' }
+            ],
+            unit2: [
+                { src: 'files/images/Unit-2-Living-Room.jpg', caption: 'Unit 2 - Living Room' },
+                { src: 'files/images/Unit-2-Kitchen.jpg', caption: 'Unit 2 - Kitchen' },
+                { src: 'files/images/Unit-2--Kitchen-View-2.jpg', caption: 'Unit 2 - Kitchen View 2' },
+                { src: 'files/images/Unit-2-Kitchen-and-Dining-Room.jpg', caption: 'Unit 2 - Kitchen and Dining Room' },
+                { src: 'files/images/Unit-2-Dining-Room-Alt-View.jpg', caption: 'Unit 2 - Dining Room Alt View' },
+                { src: 'files/images/Unit-2-Dining-Room-Alt-View-2.jpg', caption: 'Unit 2 - Dining Room Alt View 2' },
+                { src: 'files/images/Unit-2-Stairs-View-1.jpg', caption: 'Unit 2 - Stairs View 1' },
+                { src: 'files/images/Unit-2-Stairs-View-2.jpg', caption: 'Unit 2 - Stairs View 2' },
+                { src: 'files/images/Unit-2-Stairs-View-3.jpg', caption: 'Unit 2 - Stairs View 3' },
+                { src: 'files/images/Unit-2-Hall-to-Bedrooms-and-Bathroom.jpg', caption: 'Unit 2 - Hall to Bedrooms and Bathroom' },
+                { src: 'files/images/Unit-2-Bathroom.jpg', caption: 'Unit 2 - Bathroom' },
+                { src: 'files/images/Unit-2-Bathroom-View-2.jpg', caption: 'Unit 2 - Bathroom View 2' },
+                { src: 'files/images/Unit-2-Photo-2-Bathroom.jpg', caption: 'Unit 2 - Bathroom Detail' },
+                { src: 'files/images/Unit-2-Bedroom-1-View-1.jpg', caption: 'Unit 2 - Bedroom 1 View 1' },
+                { src: 'files/images/Unit-2-Bedroom-1-View-2.jpg', caption: 'Unit 2 - Bedroom 1 View 2' },
+                { src: 'files/images/Unit-2-Bedroom-1-View-3.jpg', caption: 'Unit 2 - Bedroom 1 View 3' },
+                { src: 'files/images/Unit-2-Bedroom-1-View-4.jpg', caption: 'Unit 2 - Bedroom 1 View 4' },
+                { src: 'files/images/Unit-2-Bedroom-1-View-5.jpg', caption: 'Unit 2 - Bedroom 1 View 5' },
+                { src: 'files/images/Unit-2-Bedroom-1-View-6.jpg', caption: 'Unit 2 - Bedroom 1 View 6' },
+                { src: 'files/images/Unit-2-Bedroom-2-View-1.jpg', caption: 'Unit 2 - Bedroom 2 View 1' },
+                { src: 'files/images/Unit-2-Bedroom-2-View-2.jpg', caption: 'Unit 2 - Bedroom 2 View 2' },
+                { src: 'files/images/Unit-2-Bedroom-2-View-3.jpg', caption: 'Unit 2 - Bedroom 2 View 3' },
+                { src: 'files/images/Unit-2-Bedroom-2-View-4.jpg', caption: 'Unit 2 - Bedroom 2 View 4' },
+                { src: 'files/images/Unit-2-Bedroom-2-View-5.jpg', caption: 'Unit 2 - Bedroom 2 View 5' }
+            ],
+            location: [
+                { src: 'files/images/Saco-River.jpg', caption: 'Saco River' },
+                { src: 'files/images/View-of-Saco-River.jpg', caption: 'View of Saco River' },
+                { src: 'files/images/Down-Town-Biddeford.jpg', caption: 'Downtown Biddeford' },
+                { src: 'files/images/Down-Town-Biddeford-and-Saco-River.jpg', caption: 'Downtown Biddeford and Saco River' },
+                { src: 'files/images/Town-Of-Biddeford.jpg', caption: 'Town of Biddeford' },
+                { src: 'files/images/Town-of-Saco.jpg', caption: 'Town of Saco' }
+            ]
+        };
+
+        // Flatten all photos for lightbox navigation
+        let allPhotos = [];
+        Object.values(photos).forEach(category => {
+            allPhotos = allPhotos.concat(category);
+        });
+
+        let currentImageIndex = 0;
+
+        // Generate gallery for each category
+        function generateGallery(categoryId, photoArray) {
+            const gallery = document.getElementById(`gallery-${categoryId}`);
+            photoArray.forEach((photo, index) => {
+                const globalIndex = allPhotos.findIndex(p => p.src === photo.src);
+                const item = document.createElement('div');
+                item.className = 'gallery-item';
+                item.onclick = () => openLightbox(globalIndex);
+                item.innerHTML = `
+                    <img src="${photo.src}" alt="${photo.caption}" loading="lazy">
+                    <div class="gallery-caption">${photo.caption}</div>
+                `;
+                gallery.appendChild(item);
+            });
+        }
+
+        // Generate all galleries
+        generateGallery('exterior', photos.exterior);
+        generateGallery('aerial', photos.aerial);
+        generateGallery('unit1', photos.unit1);
+        generateGallery('unit2', photos.unit2);
+        generateGallery('location', photos.location);
+
+        // Lightbox functions
+        function openLightbox(index) {
+            currentImageIndex = index;
+            const lightbox = document.getElementById('lightbox');
+            const img = document.getElementById('lightbox-img');
+            const caption = document.getElementById('lightbox-caption');
+            img.src = allPhotos[index].src;
+            caption.textContent = allPhotos[index].caption;
+            lightbox.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            const lightbox = document.getElementById('lightbox');
+            lightbox.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+
+        function changeImage(direction) {
+            currentImageIndex += direction;
+            if (currentImageIndex < 0) currentImageIndex = allPhotos.length - 1;
+            if (currentImageIndex >= allPhotos.length) currentImageIndex = 0;
+            const img = document.getElementById('lightbox-img');
+            const caption = document.getElementById('lightbox-caption');
+            img.src = allPhotos[currentImageIndex].src;
+            caption.textContent = allPhotos[currentImageIndex].caption;
+        }
+
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeLightbox();
+            if (e.key === 'ArrowLeft') changeImage(-1);
+            if (e.key === 'ArrowRight') changeImage(1);
+        });
+
+        // Click outside to close
+        document.getElementById('lightbox').addEventListener('click', (e) => {
+            if (e.target.id === 'lightbox') closeLightbox();
+        });
+
+        // Scroll to top functionality
+        window.addEventListener('scroll', () => {
+            const scrollTop = document.getElementById('scrollTop');
+            if (window.pageYOffset > 300) {
+                scrollTop.classList.add('visible');
+            } else {
+                scrollTop.classList.remove('visible');
+            }
+        });
+
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
